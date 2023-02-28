@@ -1,0 +1,96 @@
+:root{
+    --text-color-initial: red;
+    --text-color-final: blue;
+}
+
+@keyframes colorShift
+{
+    from{
+        color: var(--text-color-initial);
+    }
+    
+    to{
+        color: var(--text-color-final);
+    }
+}
+
+h1, h2, blockquote{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    font-size: 2vmax;
+}
+
+li, a, blockquote{
+    font-size: 1.2vmax;
+}
+
+.azure{
+    background-color: #EFF;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    margin: 5px 0px;
+    padding: 5px 10px
+}
+
+aside  {
+    float: right;
+    width: 50%;
+}
+
+aside h1{
+    animation: colorShift 5s infinite alternate;
+}
+
+footer {
+    clear: both;
+}     
+
+header {
+    animation: colorShift 5s infinite alternate;
+}     
+
+main { 
+    float: left;
+    width: 45%;
+}
+
+main h1{
+    margin-bottom: 10px;
+    animation: colorShift 5s infinite alternate;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    /* Specyfikacja wyglądu */
+}
+
+nav li {
+    /* Specyfikacja wyglądu */
+}
+
+@media screen and (max-width: 1700px){
+    main{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside{
+        width: unset;
+    }
+
+    main{
+        width: unset;
+    }
+}
