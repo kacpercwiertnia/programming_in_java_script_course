@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <!-- Zmień wartość "lang" z 'en' na 'pl' -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous"><!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>
+      Tytuł strony / Page tile
+    </title>
+  </head>
+  <body>
+
+    <!-- HEADER PHONE AND EMAIL -->
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h4 class="text-muted"><i class="bi bi-telephone-fill"></i> Telefon <a href="callto://+4812345678">+48 123 456 789</a></h4>
+            </div>
+            <div class="col">
+                <h4 class="text-muted"><i class="bi bi-envelope-fill"></i> Email <a href="mailto:biuro@abc.pl">biuro@abc.pl</a></h4>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cash"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logowanie</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Oferta
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item py-2" href="#">Placówki</a></li>
+                    <li><a class="dropdown-item py-2" href="#">Bankomaty</a></li>
+                    <li><a class="dropdown-item border-top py-2" href="#">Notowania</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <span class="navbar-text">
+                Bank "ABC" S.A.
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3">
+                <div class="card cardLeft">
+                    <img src="images/bank.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body py-2 bg-light border-bottom">
+                      <h5 class="card-title my-0">Dane adresowe</h5>
+                    </div>
+                    <div class="card-body">
+                      <address>
+                        <strong>Siedziba główna</strong><br>
+                        ul. Kawiory 21A, Kraków
+                      </address>
+                      <address class="mb-0">
+                        <strong>Oddział Warszawa</strong><br>
+                        ul. Wiejska 4B, Warszawa
+                      </address>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3">
+                <div class="card cardCenter">
+                    <img src="images/acountant.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body py-2 bg-light border-bottom">
+                        <h5 class="card-title my-0">Klient biznesowy</h5>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Prowadzisz firmę?</p>
+                      <a href="#" class="btn btn-primary">Załóz konto firmowe</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6">
+                <div class="card cardRight">
+                    <img src="images/entrepreneur.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-2 bg-light border-bottom">
+                      <h5 class="card-title my-0">Oferta specjalna</h5>
+                    </div>
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                            Jesteś absolwetnem informatyki AGH?
+                        </li>
+                        <li>
+                            Pracujesz jako programista?
+                        </li>
+                      </ul>
+                      <a href="#" class="btn btn-primary">Załóz konto specjalne</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">
+                <div class="card">
+                    <img src="images/pln.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="images/money.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body py-2 bg-light border-bottom">
+                        <h5 class="card-title my-0">Klient biznesowy</h5>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <nav class="navbar fixed-bottom bg-body-tertiary p-0">
+        <div class="container-fluid justify-content-end">
+          <p class="m-0"><i class="bi bi-c-circle"></i> Informatyka AGH templates</p>
+        </div>
+    </nav>
+    
+    <!-- BOOTSTRAP SCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+@keyframes shiftRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(50vmin);
+    }
+}
+
+@keyframes shiftLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-50vmin);
+    }
+}
+
+@keyframes rotation{
+    from {
+        transform: rotateX(0);
+    }
+
+    to{
+        transform: rotateX(360deg);
+    }
+}
+
+.cardLeft:hover{
+    z-index: 1;
+    animation: shiftRight 1s;
+}
+
+.cardRight:hover{
+    z-index: 1;
+    animation: shiftLeft 1s;
+}
+
+.cardCenter:hover{
+    animation: rotation 1s;
+}
